@@ -62,10 +62,6 @@ async def connect(*args: Any, **kwargs: Any) -> MySQLConnectionAbstract:
     MySQL server and return a `MySQLConnectionAbstract` subclass
     object such as `MySQLConnection` or `CMySQLConnection`.
 
-    When any connection pooling arguments are given, for example `pool_name`
-    or `pool_size`, a pool is created or a previously one is used to return
-    a `PooledMySQLConnection`.
-
     Args:
         *args: N/A.
         **kwargs: For a complete list of possible arguments, see [1]. If no arguments
